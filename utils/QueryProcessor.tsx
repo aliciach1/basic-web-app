@@ -6,15 +6,15 @@ export default function QueryProcessor(query: string): string {
       "writer in the English language and the world's pre-eminent dramatist."
     );
   }
-  if (query.toLowerCase().includes("andrew id")){
+  if (query.toLowerCase().includes("andrew id") || query.toLowerCase().includes("name")) {
     return(
       "aliciach"
     )
   }
 
-  if (query.toLowerCase().includes("name")) {
-    return "Rohan";
-  }
+  // if (query.toLowerCase().includes("name")) {
+  //   return "Rohan";
+  // }
 
   return "";
 }
