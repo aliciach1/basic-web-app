@@ -11,6 +11,14 @@ export default function QueryProcessor(query: string): string {
       "aliciach"
     );
   }
+  if (query.toLowerCase().includes("largest")) {
+    //return the largest number in the query
+    const numbers = query.match(/-?\d+/g);
+    if (numbers) {
+      const largest = Math.max(...numbers.map(Number));
+      return largest.toString();
+    }
+  }
 
   // if (query.toLowerCase().includes("name")) {
   //   return "Rohan";
