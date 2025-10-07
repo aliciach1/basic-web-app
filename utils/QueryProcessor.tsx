@@ -9,7 +9,7 @@ export default function QueryProcessor(query: string): string {
   if (query.toLowerCase().includes("andrew id") || query.toLowerCase().includes("name")) {
     return(
       "aliciach"
-    )
+    );
   }
 
   // if (query.toLowerCase().includes("name")) {
